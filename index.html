@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS file -->
+    <title>Document</title>
+</head>
+<body onload="setFootballPos()">
+    <!-- Calling the function to get the ball in the middle of the field -->
+        
+        <div class="formElement" style="display: none;">
+            <label for="playerName">Change your name</label>
+            <input id="playerName" name = "playerName" type="text">
+            <button type="submit" onclick="changeName()">Submit</button>
+        </div>
+        <!-- Created a hidden did which will be turned visible when someone double clicks on a player -->
+<div class="field">
+    <!-- Parent div -->
+    <div class="scoreCardRow">
+        <div class="scoreCard">
+            <table class = "scoreTable">
+                <!-- Main score card -->
+                <tr>
+                    <td id="firstName" class="firstName">Player1</td>
+                    <td id=" secondName" class="secondName">Player2</td>
+                    <td id=" thirdName" class="thirdName">Player3</td>
+                </tr>
+                <tr>
+                        <td id="firstScore" class="firstScore">0</td>
+                        <td id="secondScore" class="secondScore">0</td>
+                        <td id="thirdScore" class="thirdScore">0</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div class="firstQuadrant">
+    <!-- The first quadrant of the website -->
+        <img class="goalpost" src="images/goalpost.png" alt="">
+    
+    </div>
+    <div class="secondQuadrant">
+        <!-- The second quadrant where football resides -->
+            <img class="football" id="myImg" src="images/football.svg" alt="" height="50">
+           
+    </div>
+    <div class="thirdQuadrant">
+        <!-- The third quadrant where the player's images are placed, I used a table so that they can be on the same row. -->
+        <table>
+            <tr>
+                    <div id="player1" ><img src="images/player1.png" alt=""></div>
+                </tr>
+            <tr>
+                    <div id="player2" ><img src="images/player2.png" alt=""></div>
+                </tr>
+            <tr>
+                    <div id="player3" ><img src="images/player3.png" alt=""></div>
+                </tr>
+
+        </table>
+            
+           
+            
+    </div>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
